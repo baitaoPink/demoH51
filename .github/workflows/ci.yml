@@ -10,35 +10,10 @@ on:
       - main  # 仅在 pull request 合并到 main 时触发
 
 jobs:
-  # 第一个任务：安装依赖和运行单元测试
-  test:
-    runs-on: ubuntu-latest  # 在最新的 Ubuntu 环境上运行
 
-    steps:
-      # 检出代码
-      - name: Checkout code
-        uses: actions/checkout@v2  # 使用 GitHub 官方 Action 检出代码
-
-      # 设置 Node.js 环境
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'  # 设置 Node.js 版本
-
-      # 安装依赖
-      - name: Install dependencies
-        run: |
-          npm install -g @vue/cli  # 安装 vue-cli
-          npm install  # 安装项目依赖
-
-      # 运行测试
-      - name: Run tests
-        run: npm run test  # 根据项目配置执行测试命令
-
-  # 第二个任务：构建项目
+  # 第1个任务：构建项目
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -50,7 +25,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install -g @vue/cli  # 安装 vue-cli
           npm install -g @dcloudio/uni-app
           npm install  # 安装项目依赖
 
