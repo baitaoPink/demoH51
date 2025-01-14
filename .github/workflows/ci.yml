@@ -51,6 +51,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm install -g @vue/cli  # 安装 vue-cli
+          npm install -g @dcloudio/uni-app
           npm install  # 安装项目依赖
 
       - name: Build Web H5
