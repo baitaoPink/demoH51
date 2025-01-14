@@ -11,8 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dcloudio/uni-app": "^2.0.2-4040520250103001",
     "add": "^2.0.6",
     "vue-cli-service": "^5.0.10"
+  },
+  "devDependencies": {
+    "@dcloudio/uni-app": "^2.0.2-4040520250103001"
   }
 }

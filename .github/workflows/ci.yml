@@ -29,5 +29,5 @@ jobs:
           npm install  # 安装项目依赖
 
       - name: Build Web H5
-        run: npm run build:h5  # 构建 Web H5
+        run: npx uni build --h5  # 构建 Web H5
         
