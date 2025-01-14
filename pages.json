@@ -1,0 +1,102 @@
+{
+	"pages": [
+		{
+			"path" : "pages/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/home/home",
+			"style" : 
+			{
+				"navigationBarTitleText" : "首页",
+				"navigationBarBackgroundColor": "#0f151f",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path" : "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#254d7d",
+				"navigationStyle": "custom" // 使用自定义导航栏，隐藏默认导航栏
+			}
+		},
+		
+		{
+			"path" : "pages/record_list/record_list",
+			"style" : 
+			{
+				"navigationBarTitleText" : "战绩",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#254d7d"
+			}
+		},
+		{
+			"path" : "pages/my/my",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#254d7d"
+			}
+		},
+		{
+			"path" : "pages/details/details",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#254d7d"
+				
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uView Vue3.0 横空出世，继承uView1.0意志，再战江湖，风云再起！",
+		// #ifndef MP-ALIPAY
+		"navigationBarBackgroundColor": "#F8F8F8",
+		// #endif
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#fff",
+		"selectedColor": "#ff9900",
+		"borderStyle": "black",
+		"fontSize": "22px",
+		"backgroundColor": "#2b5893",
+		"height": "100px",
+		"list": [
+			{
+				"pagePath" : "pages/home/home",
+				"text": "首页"
+			},
+			{
+			"pagePath": "pages/index/index",
+			// "iconPath": "static/image/icon_component.png",
+			// "selectedIconPath": "static/image/icon_component_HL.png",
+			"text": "竞猜"
+			
+			
+		},
+		{
+			"pagePath": "pages/record_list/record_list",
+			// "iconPath": "static/image/icon_API.png",
+			// "selectedIconPath": "static/image/icon_API_HL.png",
+			
+			"text": "战绩"
+		},
+		{
+			"pagePath": "pages/my/my",
+			// "iconPath": "static/image/icon_API.png",
+			// "selectedIconPath": "static/image/icon_API_HL.png",
+			"text": "我的"
+		}
+		]
+	}
+
+}

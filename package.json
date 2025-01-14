@@ -1,0 +1,17 @@
+{
+  "name": "integral_h5_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "vue-cli-service test",
+    "build:h5": "uni build --h5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "add": "^2.0.6",
+    "vue-cli-service": "^5.0.10"
+  }
+}
